@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:manager_end/objects%20and%20constants/constants.dart';
+import 'package:manager_end/pages/completed_requests.dart';
 import 'package:manager_end/pages/current_requests.dart';
 
 class Home extends StatefulWidget {
@@ -47,6 +48,7 @@ class _HomeState extends State<Home> {
                       IconButton(
                           onPressed: () {
                             //todo: go to relevant page
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=> const CompletedRequests()));
                           },
                           icon: const FaIcon(FontAwesomeIcons.checkDouble)
                       ),

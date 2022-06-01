@@ -38,7 +38,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '19',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -62,7 +62,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '20',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -86,7 +86,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '15',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -110,7 +110,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '14',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -134,7 +134,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '13',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -158,7 +158,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '12',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -182,7 +182,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '11',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -206,7 +206,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '10',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
@@ -230,7 +230,7 @@ class RequestListing{
          buildingAddy: '1515 Pembina Highway',
          buildingName: 'Royse',
          currentTenantName: 'John Doe',
-         unitNumber: '18',
+         unitNumber: '22',
          photos: [
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',
            'https://mediavault.point2.com/Image/Listing/4780447060_large.jpg',

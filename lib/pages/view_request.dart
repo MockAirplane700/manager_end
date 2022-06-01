@@ -46,7 +46,7 @@ class _ViewRequestState extends State<ViewRequest> {
             Row(children: [Expanded(child: ElevatedButton(
               onPressed: () {
                 //change the status
-                request.changeStatus(false);
+                request.changeStatus(true);
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content:Text('Status has been updated')));
                 Navigator.pop(context);
               },
