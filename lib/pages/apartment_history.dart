@@ -32,7 +32,7 @@ class _ApartmentHistoriesState extends State<ApartmentHistories> {
             }else{
               //map not empty
               //todo: create a list of type problem from the map, try using for each
-              List<Problem>? problems = _map![1];
+              List<Problem>? problems = _map[1];
 
               return ExpansionTile(
                 //for the apartment number
