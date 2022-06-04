@@ -38,51 +38,59 @@ class _ApartmentHistoriesState extends State<ApartmentHistories> {
                 //for the apartment number
                   title: Text('Apartment unit: ${(index + 1 )}'),
                   children: [
-                    ListView.builder(
-                        itemBuilder: (context, index) {
-                          // return ListTile(
-                          //   title: Text(problems[index].problemName, style:const TextStyle(color: primaryTextColor),),
-                          //   subtitle: Text(problems[index].problemDescription, style: const TextStyle(color: primaryTextColor),maxLines: 2,overflow: TextOverflow.ellipsis,),
-                          //   trailing: Text('Status complete\n${problems[index].status}',style: const TextStyle(color: primaryTextColor),),
-                          //   onTap: () {
-                          //     //open a dialog box showing more details on problem
-                          //     showDialog(
-                          //         context: context,
-                          //         builder: (BuildContext context)=> AlertDialog(
-                          //           title: Text(problems[index].problemName, style:const TextStyle(color: primaryTextColor),),
-                          //           content:  Column(
-                          //             mainAxisAlignment: MainAxisAlignment.center,
-                          //             children: [
-                          //               Padding(padding: EdgeInsets.all(MediaQuery.of(context).size.height/100),child: CarouselSlider.builder(
-                          //                   itemCount: problems[index].photos.length,
-                          //                   itemBuilder: (BuildContext context, int index, int pageViewIndex) {
-                          //                     return Image.network(problems[index].photos[index]);
-                          //                   },
-                          //                   options: CarouselOptions(
-                          //                       height: MediaQuery.of(context).size.height/4,
-                          //                       aspectRatio: 16/9,
-                          //                       autoPlay: true,
-                          //                       autoPlayInterval: const Duration(seconds: 3)
-                          //                   )
-                          //               ),),
-                          //               SizedBox(height: MediaQuery.of(context).size.height/50,),
-                          //               Text(problems[index].problemName, style:const TextStyle(fontSize: 18, color: primaryTextColor),),
-                          //               SizedBox(height: MediaQuery.of(context).size.height/50,),
-                          //               Text(problems[index].problemDescription, style: const TextStyle(color: primaryTextColor),),
-                          //               SizedBox(height: MediaQuery.of(context).size.height/50,),
-                          //             ],
-                          //           ),
-                          //           actions: [
-                          //             TextButton(onPressed: ()=> Navigator.pop(context,'Cancel'), child: const Text('Cancel',style: TextStyle(color: primaryTextColor),)),
-                          //             TextButton(onPressed: ()=> Navigator.pop(context,'OK'), child: const Text('OK',style: TextStyle(color: primaryTextColor),))
-                          //           ],
-                          //         )
-                          //     );
-                          //   },
-                          // );
-                          return Text(problems![index].problemName);
-                        },
-                      itemCount: problems?.length,
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height/5,
+                      child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return ListTile(
+                              title: Text(problems![index].problemName, style:const TextStyle(color: primaryTextColor),),
+                              subtitle: Text(problems[index].problemDescription, style: const TextStyle(color: primaryTextColor),maxLines: 2,overflow: TextOverflow.ellipsis,),
+                              trailing: Text('Status complete\n${problems[index].status}',style: const TextStyle(color: primaryTextColor),),
+                              onTap: () {
+                                //open a dialog box showing more details on problem
+                                showDialog(
+                                    context: context,
+                                    builder: (BuildContext context)=> SizedBox(
+                                      height: MediaQuery.of(context).size.height/2,
+                                      child: AlertDialog(
+                                        title: Text(problems[index].problemName, style:const TextStyle(color: primaryTextColor),),
+                                        content:  SingleChildScrollView(child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            // Padding(padding: EdgeInsets.all(MediaQuery.of(context).size.height/100),child: CarouselSlider.builder(
+                                            //     itemCount: problems[index].photos.length,
+                                            //
+                                            //     itemBuilder: (BuildContext context, int index, int pageViewIndex) {
+                                            //       return Image.network(problems[index].photos[index]);
+                                            //     },
+                                            //     options: CarouselOptions(
+                                            //         height: MediaQuery.of(context).size.height/4,
+                                            //         aspectRatio: 16/9,
+                                            //         autoPlay: true,
+                                            //         autoPlayInterval: const Duration(seconds: 3)
+                                            //     )
+                                            // ),),
+                                            Padding(padding: EdgeInsets.all(MediaQuery.of(context).size.height/100),child: Image.network(problems[index].photos[0]),),
+                                            SizedBox(height: MediaQuery.of(context).size.height/50,),
+                                            Text(problems[index].problemName, style:const TextStyle(fontSize: 18, color: primaryTextColor),),
+                                            SizedBox(height: MediaQuery.of(context).size.height/50,),
+                                            Text(problems[index].problemDescription, style: const TextStyle(color: primaryTextColor),),
+                                            SizedBox(height: MediaQuery.of(context).size.height/50,),
+                                          ],
+                                        ),),
+                                        actions: [
+                                          TextButton(onPressed: ()=> Navigator.pop(context,'Cancel'), child: const Text('Cancel',style: TextStyle(color: primaryTextColor),)),
+                                          TextButton(onPressed: ()=> Navigator.pop(context,'OK'), child: const Text('OK',style: TextStyle(color: primaryTextColor),))
+                                        ],
+                                      ),
+                                    )
+                                );
+                              },
+                            );
+                            // return Text(problems![index].problemName);
+                          },
+                        itemCount: problems?.length,
+                      ),
                     )
                   ],
               );
